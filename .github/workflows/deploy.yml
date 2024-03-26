@@ -20,6 +20,8 @@ jobs:
       #   run: npm ci
       - name: Load & Cache deps
         uses: ./.github/actions/cached-deps
+        with:
+          caching: false
       - name: Lint code
         run: npm run lint
   test:
