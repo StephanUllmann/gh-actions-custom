@@ -11,6 +11,9 @@ inputs:
   dist-folder:
     description: 'Folder containing deployable files'
     required: true
+outputs:
+  website-url:
+    description: 'URL of deployed website'
 runs:
   using: 'node20'
   # pre: somethingRunningBefore.js
